@@ -1,6 +1,7 @@
 :root {
   --default-color: rgb(0, 0, 0);
   --default-font-size: 1.8rem;
+  --title-font-size: 6.4rem;
   --default-width: 164rem;
 }
 
@@ -148,10 +149,196 @@ body {
   justify-content: space-around;
   max-width: var(--default-width);
   margin: auto;
-  padding: 4rem;
-  border: 2px solid black;
+  background-color: black;
+  padding: 2rem;
+  border-radius: 11px;
 }
 .sponsor {
-  height: 8rem;
+  height: 6.8rem;
   filter: grayscale(100%);
+}
+.benefits-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: var(--default-width);
+  padding: 4rem 4rem;
+  margin: auto;
+  gap: 6rem;
+}
+.benefit-illustration {
+  height: 64rem;
+}
+.benefits-title {
+  font-size: var(--title-font-size);
+  font-family: "Noto Serif Display", serif;
+  font-weight: 500;
+  max-width: 60rem;
+}
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 4rem;
+  margin: 2rem 0;
+}
+.benefits-item {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.benefit-icon-wrapper {
+  display: block;
+  width: 6rem;
+  height: 6rem;
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+  border-radius: 11px;
+  background-color: #e9e9e9dc;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+}
+.benefits-icon {
+  display: block;
+  height: 24px;
+}
+.benefit-name {
+  font-weight: 500;
+}
+.benefit-descr {
+  line-height: 1.8;
+  max-width: 32rem;
+}
+
+.organize-wrapper {
+  max-width: var(--default-width);
+  margin: auto;
+  padding: 0rem 4rem 4rem 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.organize-left {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+.organize-title {
+  font-size: var(--title-font-size);
+  font-family: "Noto Serif Display", serif;
+  width: 60rem;
+}
+.organize-descr {
+  max-width: 50rem;
+  line-height: 1.6;
+  font-size: 2.2rem;
+}
+.organize-btn {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  background-color: #000;
+  padding: 1.6rem 4.2rem;
+  transition: 0.3s all ease-in-out;
+  width: 18rem;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.organize-btn:hover {
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.organize-illustration {
+  height: 64rem;
+  width: 64rem;
+}
+.engage-title {
+  font-size: var(--title-font-size);
+  font-family: "Noto Serif Display", serif;
+  text-align: center;
+  font-weight: 500;
+}
+.engage-flex {
+  display: flex;
+  justify-content: center;
+  gap: 12rem;
+  align-items: center;
+}
+.grid-item {
+  gap: 2rem;
+  padding: 4rem;
+  border-radius: 11px;
+  height: 34rem;
+  width: 34rem;
+  margin: 6rem 0;
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  align-items: center;
+}
+.engage-icon-wrapper {
+  display: block;
+  width: 6rem;
+  height: 6rem;
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+  border-radius: 11px;
+  background-color: #000000;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+}
+.engage-icons {
+  height: 2.4rem;
+  stroke: #fff;
+}
+.engage-item-title {
+  font-weight: 500;
+}
+.engage-item-descr {
+  max-width: 50rem;
+  line-height: 1.6;
+}
+.engage-item-link {
+  text-decoration: none;
+  color: #000;
+}
+.newsletter-wrapper {
+  max-width: var(--default-width);
+  margin: 4rem auto;
+  padding: 4rem;
+}
+.newsletter-title {
+  font-size: var(--title-font-size);
+  font-family: "Noto Serif Display", serif;
+  text-align: center;
+  font-weight: 500;
+}
+.newsletter-descr {
+  text-align: center;
+  line-height: 1.4;
+  padding: 4rem;
+}
+.mail-btn-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+input {
+  font-size: 2rem;
+  padding: 4px;
+}
+input:focus {
+  outline: none;
+}
+.newsletter-btn {
+  font-size: 2rem;
+  padding: 4px 24px;
+}
+.footer {
+  background-color: black;
+  padding: 4rem;
+}
+.my-name {
+  text-align: center;
+  color: #fff;
 }
